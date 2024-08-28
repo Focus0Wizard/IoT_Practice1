@@ -2,14 +2,11 @@
 #define ECHO_PIN 12
 #define MAX_DISTANCE 30
 
-// Crear instancia del sensor de ultrasonido
 UltrasonicSensor sensor(TRIG_PIN, ECHO_PIN);
-
-// Crear array de instancias de LEDs
 LED leds[] = { LED(23), LED(22), LED(18), LED(19), LED(21) };
 
 void setup() {
-  Serial.begin(9600);  // Inicializar la comunicación serial
+  Serial.begin(9600);
 }
 
 void loop() {
